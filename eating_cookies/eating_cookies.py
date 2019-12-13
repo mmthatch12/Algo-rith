@@ -16,10 +16,10 @@ def eating_cookies(n):
   if n not in cachee:
     cachee[n] = eating_cookies(n-1)+eating_cookies(n-2)+eating_cookies(n-3)
   
-  return eating_cookies(n-1)+eating_cookies(n-2)+eating_cookies(n-3)
+  return cachee[n]
 
 
-print(eating_cookies(30))
+print(eating_cookies(100))
 
 
 # if __name__ == "__main__":
